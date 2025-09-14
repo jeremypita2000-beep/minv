@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Para ti</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="qr-container" id="qr-container" style="display:none;">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://love.tsonit.com" alt="QR Code">
+  </div>
+
+  <!-- Todas las fotos -->
+  <div class="photo-container" id="photo-container"></div>
+
+  <!-- Textos animados -->
+  <div class="text-container" id="text-container"></div>
+
+  <audio id="background-music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <div id="start-button-container">
+    <div id="start-card">
+      <button id="start-button">Toca para comenzar</button>
+      <p class="small-note">Activa audio y disfruta ♥</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
